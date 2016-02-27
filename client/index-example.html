@@ -3,19 +3,66 @@
 <head>
   <title>The Truth Is Out There</title>
   <style>
-  body {
-      color: #00ff3c;
-  }
+    body {
+        color: #00ff3c;
+    }
+    .offscreen{
+          position: absolute;
+          left: -5000px;
+    }
+    #map {
+         height: 600px;
+         width: 100%;
+     }
+   .leaflet-container {
+       background-color:rgba(255, 0, 0, 0.0);
+   }
+   a {
+    color: #FF8300;
+   }
+
+   .center {
+    margin: auto;
+    border: 3px solid #00ff3c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+    .content {
+      margin: auto;
+      margin-right: 25%
+      margin-left: 25%;
+      font-family: Courier, sans-serif;
+      width: 800px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
 </head>
 <body bgcolor="#000000">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <div>Hello World</div>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bb87kpztOG4" frameborder="0" allowfullscreen></iframe>
-  <div style="width: 800px; height: 630px;">
+  <iframe class="offscreen" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120101661&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+  <img src="assets/MiniUFO.gif">
+  <img src="assets/Banner.jpg">
+  <img src="assets/MiniUFO.gif">
+  <h2 class="content">Now more than ever is the time to believe! With thousands of eye witness accounts being validated using planet imagery, no one can ever doubt you again. Now do you believe?</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bb87kpztOG4" frameborder="0" allowfullscreen class="center"></iframe>
+  <h2 class="content">Above is a video of a UFO sighting in LA. Below is a satellite image for comparison. Read about the sighting <a href="http://www.ufosightingsdaily.com/2015/11/massive-blue-ufo-over-los-angeles-and.html">here.</a> Do you want to believe?</h2>
+  <div style="width: 800px; height: 630px;" class="center">
     <script id="test" src="https://embed.planet.com/v0/slider/main.js"
         data-api-key="YOUR_API_KEY"
         data-compare-scene="ortho/20151107_201322_0b09"></script>
+  </div>
+  <img src="assets/ArtistRendition.jpg" class="center">
+  <i style="font-family:courier,sans-serif;color:#FF8300;margin-left:25%;display:block">Rendition by Mel.</i>
+  <h2 class="content">Above is an artist's rendition of a UFO sighting in Garden Grove, CA on 2/10/2016 at 06:00.Read the witness's description <a href="http://www.nuforc.org/webreports/125/S125745.html">here.</a> Below is a satellite image from that day. Do you see the UFO?
+  </h2>  
+  <div style="width: 800px; height: 630px;" class="center">
+    <script id="test" src="https://embed.planet.com/v0/slider/main.js"
+        data-api-key="YOUR_API_KEY"
+        data-compare-scene="rapideye/20160210_193015_1154611_RapidEye-2"></script>
   </div>
 </body>
 </html>
