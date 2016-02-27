@@ -1,0 +1,29 @@
+{
+  "name": "ufo-tracker",
+  "version": "1.0.0",
+  "description": "The Truth Is Out There",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SYU88/ufo-tracker.git"
+  },
+  "keywords": [
+    "aliens",
+    "ufo",
+    "planet",
+    "labs"
+  ],
+  "author": "Sarah Yu, Mel Dadoly, Demetria Blair",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SYU88/ufo-tracker/issues"
+  },
+  "homepage": "https://github.com/SYU88/ufo-tracker#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
